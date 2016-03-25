@@ -10,7 +10,6 @@ Swift implementation of the famous npm [left-pad](http://left-pad.io/) module
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-(Dont actually install this, this is a joke :) )
 
 ## Requirements
 
