@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/LeftPad.svg?style=flat)](http://cocoapods.org/pods/LeftPad)
 [![Platform](https://img.shields.io/cocoapods/p/LeftPad.svg?style=flat)](http://cocoapods.org/pods/LeftPad)
 
-Swift implementation of the famous npm [left-pad]((http://left-pad.io/)) module
+Swift implementation of the famous npm [left-pad](http://left-pad.io/) module
 
 ## Usage
 
