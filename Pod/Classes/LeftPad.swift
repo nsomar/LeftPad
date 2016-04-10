@@ -18,6 +18,16 @@ public func leftPad(string string: String, padding: Int) -> String {
   if len >= padding {
     return string
   } else {
-    return (0..<(padding - len)).reduce("", combine: { $0.0 + " " }) + string
+    let times = padding - len
+    
+    //+1 for nul terminator
+    let CString = UnsafeMutablePointer<CChar>(malloc((times + 1)*sizeof(CChar)))
+    for i in 0..<times {
+      CString[i] = 32 //32 = ' '
+    }
+    CString[times] = 0
+    
+    let padding = String.fromCString(CString) ?? /** fallback to slower version*/ String(count: times, repeatedValue: Character(" "))
+    return padding + string
   }
 }
