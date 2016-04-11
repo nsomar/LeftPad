@@ -21,3 +21,9 @@ public func leftPad(string string: String, padding: Int) -> String {
     return (0..<(padding - len)).reduce("", combine: { $0.0 + " " }) + string
   }
 }
+
+extension String {
+    public func padLeft(padding: Int) -> String {
+        return leftPad(string: self, padding: padding)
+    }
+}
